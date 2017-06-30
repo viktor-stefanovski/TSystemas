@@ -1,0 +1,28 @@
+.error-form {
+	border:1px solid #c00000;
+}
+
+.error-label {
+	color: #c00000;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.alignright{
+	
+}
+/* .selectdiv:after {
+  content: '<>';
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */

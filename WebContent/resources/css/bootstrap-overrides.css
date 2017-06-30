@@ -1,0 +1,398 @@
+body {
+	font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+	padding: 0 15px 0 15px;
+}
+
+.box0 {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.form-label {
+	padding: 10px 0 0 0;
+	width: 100%;
+	font-size: 14px;
+	font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+.form-label.required:after {
+	position: absolute;
+	content: "*";
+	font-size: 22px;
+	top: 11px;
+	color: #bf0000 !important;
+}
+
+.form [class*="col-"] {
+	padding: 5px;
+}
+
+.bold {
+	font-weight: bold
+}
+
+.title {
+	font-size: 1.2em;
+	color: #333;
+	width: 100%;
+	float: left;
+	margin: 20px 0px 10px;
+	border-bottom: 1px solid #333;
+}
+
+.form-text {
+	width: 100%;
+	float: left;
+}
+
+.form-text p {
+	margin: 0 0 5px;
+}
+
+.form-buttons {
+	width: 100%;
+	float: left;
+	margin: 0 0 10px;
+	text-align: right;
+}
+
+a.form-link {
+	color: #c00000;
+	cursor: pointer;
+}
+
+a.form-link:hover, a.form-link:focus {
+	text-decoration: underline;
+}
+
+.checkbox, .radio {
+	margin: 0px;
+}
+
+.form-pag1, .form-pag2, .form-pag3, .form-pag4, .form-pag5, .form-pag6 {
+	width: 100%;
+	float: left;
+}
+
+.btn {
+	border: none;
+	box-shadow: none;
+	background-image: none;
+	text-shadow: none;
+	font-size: 14px;
+	font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	line-height: 20px;
+	color: #fff;
+	background: #BF0000;
+}
+
+.btn:hover, .btn:focus {
+	color: #fff;
+	background: #BF0000;
+}
+
+.disabled.btn-default:hover, .disabled.btn-default:focus {
+	background-color: #666666;
+	color: #ffffff;
+	opacity: 0.5;
+	cursor: default;
+}
+
+.btn-primary {
+	background-color: #c00000;
+	color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+	background-color: #900000;
+	color: #ffffff;
+}
+
+.btn-primary.disabled {
+	background-color: #c00000;
+	color: #ffffff;
+	opacity: 0.5;
+	cursor: default;
+}
+
+.disabled.btn-primary:hover, .disabled.btn-primary:focus {
+	background-color: #c00000;
+	color: #ffffff;
+	opacity: 0.5;
+	cursor: default;
+}
+
+.visible {
+	display: block;
+}
+
+.novisible {
+	display: none !important;
+}
+
+.pagination {
+	width: 100%;
+	text-align: center;
+}
+
+.pagination>li {
+	display: inline-block;
+}
+
+.form-anotations {
+	font-size: 12px;
+	margin-top: 10px;
+	border-top: 1px solid #666666;
+	padding-top: 10px;
+}
+
+.form-requiredfields {
+	border: 1px solid #BF0000;;
+}
+
+.breadcrumbs-container {
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.breadcrumb-lastitem, .breadcrumb-firstitem, .breadcrumb-item {
+	float: left;
+	margin: 0 11px 0 11px;
+	width: calc(20% - 21px);
+}
+
+.breadcrumb-firstitem {
+	margin-left: 0px;
+}
+
+.breadcrumb-lastitem .breadcrumb-text, .breadcrumb-firstitem .breadcrumb-text,
+	.breadcrumb-item .breadcrumb-text {
+	background: #F5F5F5;
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	float: left;
+	height: 60px;
+	color: #333;
+	position: relative;
+}
+
+.breadcrumb-selected .breadcrumb-text {
+	background: #dddddd;
+}
+
+.breadcrumb-lastitem .breadcrumb-text::before, .breadcrumb-item .breadcrumb-text::before
+	{
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	border-width: 30px 0 30px 14px;
+	border-style: solid;
+	border-color: #F5F5F5 #F5F5F5 #F5F5F5 transparent;
+	left: -13px;
+	border-width: 30px 0 30px 14px;
+}
+
+.breadcrumb-selected.breadcrumb-lastitem .breadcrumb-text::before,
+	.breadcrumb-selected.breadcrumb-item .breadcrumb-text::before {
+	border-color: #dddddd #dddddd #dddddd transparent;
+}
+
+.breadcrumb-firstitem .breadcrumb-text::after, .breadcrumb-item .breadcrumb-text::after
+	{
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-left: 14px solid #F5F5F5;
+	right: -13px;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+}
+
+.breadcrumb-selected.breadcrumb-firstitem .breadcrumb-text::after,
+	.breadcrumb-selected.breadcrumb-item .breadcrumb-text::after {
+	border-left: 1em solid #dddddd;
+}
+
+.breadcrumb-text span {
+	padding-top: 21px;
+	display: block;
+	font-size: 16px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media ( min-width : 768px) {
+	body {
+		padding: 0px;
+	}
+	.breadcrumbs-container {
+		width: 100%;
+		float: left;
+		display: block;
+	}
+	.breadcrumb-text span {
+		padding-top: 32px;
+		font-size: 22px;
+	}
+	.breadcrumb-lastitem .breadcrumb-text, .breadcrumb-firstitem .breadcrumb-text,
+		.breadcrumb-item .breadcrumb-text {
+		height: 100px;
+	}
+	.breadcrumb-lastitem .breadcrumb-text::before, .breadcrumb-item .breadcrumb-text::before
+		{
+		top: 50%;
+		margin-top: -50px;
+		border-width: 50px 0 50px 14px;
+	}
+	.breadcrumb-firstitem .breadcrumb-text::after, .breadcrumb-item .breadcrumb-text::after
+		{
+		margin-top: -50px;
+		border-top: 50px solid transparent;
+		border-bottom: 50px solid transparent;
+	}
+}
+
+div#validationMessage {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	padding: 0px;
+}
+
+span.red {
+	color: #bf0000;
+}
+
+.confirm-message {
+	font-size: 28px;
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.confirm-message-text {
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.ui-widget {
+	font-family: 'OpenSansRegular', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+.ui-datepicker {
+
+    padding: 0;
+
+}
+.ui-widget-header {
+	border: none;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 0px;
+	background: #ffffff;
+	font-weight: normal;
+}
+
+.ui-datepicker th {
+    color: #666666;
+    font-weight: normal;
+}
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-weight: bold!important;
+    color: #333!important;
+    font-size: 13px;
+}
+
+.ui-datepicker-today .ui-state-default{
+
+    background-color: #bf0000;
+    color: white!important;
+
+}
+.ui-datepicker-today {
+
+}
+ .ui-widget-content .ui-state-active{
+ 	    background-color: #BBBBBB!important;
+ }
+ .ui-datepicker-calendar thead{
+     border-bottom: 1px solid #dddddd;
+ }
+ .ui-icon.ui-icon-circle-triangle-w {
+ 	background-image: url('../img/NG_ico_mes_consultat.png')!important;
+    background-position: 0px 0px;
+
+}
+
+ .ui-icon.ui-icon-circle-triangle-e {
+ 	background-image: url('../img/NG_ico_mes_consultat_tancar.png')!important;
+    background-position: 0px 0px;
+
+}
+
+.ui-datepicker .ui-datepicker-prev.ui-state-hover {
+	border: none;
+	background: transparent;
+	font-weight: normal;
+	color: #2b2b2b;
+	top:2px!important;
+	left:2px!important;
+	cursor:pointer;
+}
+.ui-datepicker  .ui-datepicker-next.ui-state-hover{
+	right:2px!important;
+	border: none;
+	background: transparent;
+	font-weight: normal;
+	color: #2b2b2b;
+	top:2px!important;
+	cursor:pointer;
+}
+
+.error-msg {
+    padding: 16px 19px!important;
+}
+
+.rexwfLoading {
+	background: url('../img/loading.gif') no-repeat center black;
+	position: fixed;
+	display: block;
+	opacity: 0.5;
+	z-index: 1000001; // or, higher
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
